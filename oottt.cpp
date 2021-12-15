@@ -1,4 +1,4 @@
-/* Object Oriented Tic Tac Toe */
+/* Object Oriented Tic Tac Toe in C++ */
 
 #include <iostream>
 #include <cstdio>
