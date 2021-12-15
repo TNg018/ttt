@@ -1,8 +1,9 @@
+/* Object Oriented Tic Tac Toe */
+
 #include <iostream>
 #include <cstdio>
 #include <string>
 #include <cstdlib>
-
 using namespace std;
 
 const int BOARD_SIZE = 3;
@@ -20,7 +21,6 @@ private:
 
   // Private member variable.                                                                                                
   string board[BOARD_SIZE][BOARD_SIZE];
-
 };
 
 
@@ -32,8 +32,9 @@ int main()
 }
 
 
-// Constructor.                                                                                                              
-// Initializes the board member variable.                                                                                    
+/* Constructor.                                                                                                              
+* Initializes the board member variable.                                                                                    
+*/
 TTT::TTT()
 {
   board[0][0] = "0";
