@@ -1,6 +1,9 @@
+/*   
+* Tic Tac Toe in C++
+/*
+
 #include <iostream>
 #include <cstdlib>
-
 using namespace std;
 
 const int BOARD_SIZE = 3;
@@ -45,6 +48,7 @@ void playGame(string board[BOARD_SIZE][BOARD_SIZE])
   printBoard(board);
   cout << "The game is over!" << endl;
 }
+
 /*                                                                                                                                                                
  * Prints tic tac toe board.                                                                                                                                      
  * Should print two spaces before/after each number.                                                                                                              
@@ -59,6 +63,7 @@ void printBoard(string board[BOARD_SIZE][BOARD_SIZE])
   cout << endl;
  }
 }
+
 /*                                                                                                                                                                
  * Prompts the user for a move (int 0-9), checks if that is a valid move, and returns the move.                                                                   
  *                                                                                                                                                                
@@ -91,6 +96,7 @@ int getMove(string board[BOARD_SIZE][BOARD_SIZE], string turn)
    }
   } while (true);
 }
+
 /*                                                                                                                                                                
  * Updates board with an X or O (depending on turn) in given position.                                                                                            
  * Inputs: Game board, position as integer, string turn (X or O).                                                                                                 
@@ -105,8 +111,9 @@ void updateBoard(string board[BOARD_SIZE][BOARD_SIZE], int position, string turn
   }
  }
 }
-//why does board[0][position] work?                                                                                                                               
-  /*                                                                                                                                                              
+
+                                                                                                                             
+ /*                                                                                                                                                              
  * Checks whether game is over,                                                                                                                                   
  *  i.e., whether someone has won or the game is a draw.                                                                                                          
  * Input: Game board.                                                                                                                                             
@@ -154,4 +161,3 @@ bool gameOver(string board[BOARD_SIZE][BOARD_SIZE])
  }
  return endGame;
 }
-
