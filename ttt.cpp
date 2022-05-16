@@ -1,6 +1,6 @@
 /*   
 * Tic Tac Toe in C++
-/*
+*/
 
 #include <iostream>
 #include <cstdlib>
